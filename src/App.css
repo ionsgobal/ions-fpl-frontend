@@ -8,6 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   background: #f2f5f3;
+  padding-top: 120px;
 }
 
 .app {
@@ -23,6 +24,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .navbar h2 {
