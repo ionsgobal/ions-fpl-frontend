@@ -173,6 +173,10 @@ function App() {
 
         <div className="gameweek-card active">
           <h2>Gameweek 4</h2>
+          <div className="total-points">
+            <span>Total Points</span>0
+            <strong>{totalPoints}</strong>
+          </div>
           <p>Current lineup — 3-4-3</p>
         </div>
       </div>
@@ -227,6 +231,7 @@ function App() {
       {page === "squad" && <MySquad />}
       {page === "gameweeks" && <Gameweeks />}
       {page === "about" && <About />}
+
 
     </div>
   );
