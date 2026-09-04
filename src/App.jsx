@@ -60,7 +60,7 @@ function App() {
   const Home = () => (
     <>
       <header className="header">
-        <h1>My FPL Lineup</h1>
+        <h1>Ions FPL Lineup</h1>
         <p>Gameweek 4</p>
       </header>
 
