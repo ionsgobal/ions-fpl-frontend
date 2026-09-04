@@ -1,0 +1,337 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f5f3;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background: #071d12;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+.nav-links button:hover {
+  background: #174b2f;
+}
+
+/* HEADER */
+
+.header {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.header h1 {
+  font-size: 32px;
+}
+
+.header p {
+  margin-top: 8px;
+  color: #555;
+}
+
+/* PITCH */
+
+.pitch {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  min-height: 600px;
+
+  background: linear-gradient(
+    #258a4a,
+    #19763e
+  );
+
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* PLAYER */
+
+.player {
+  position: relative;
+  width: 100px;
+  text-align: center;
+  color: white;
+}
+
+.player-icon {
+  width: 58px;
+  height: 58px;
+  margin: auto;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  font-size: 22px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.player strong {
+  display: block;
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.player small {
+  display: block;
+  margin-top: 3px;
+  font-size: 11px;
+}
+
+.captain {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.triple-captain {
+  position: absolute;
+  top: -8px;
+  right: 0;
+  background: gold;
+  color: #111;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+/* INFO */
+
+.info {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.info h2 {
+  margin-bottom: 8px;
+}
+
+/* BENCH */
+
+.bench {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.bench h2 {
+  margin-bottom: 20px;
+}
+
+.bench-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.bench-player {
+  padding: 15px;
+  background: #f2f2f2;
+  border-radius: 8px;
+}
+
+.bench-icon {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.bench-player strong,
+.bench-player small {
+  display: block;
+}
+
+.bench-player small {
+  margin-top: 4px;
+  color: #666;
+}
+
+/* OTHER PAGES */
+
+.page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 25px;
+}
+
+.page h1 {
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+.page > p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* SQUAD */
+
+.squad-list h2 {
+  margin: 30px 0 15px;
+}
+
+.squad-list > .player {
+  color: #111;
+}
+
+.squad-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.squad-row .player {
+  color: #111;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* GAMEWEEKS */
+
+.gameweeks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.gameweek-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 5px solid #174b2f;
+}
+
+.gameweek-card h2 {
+  margin-bottom: 10px;
+}
+
+.gameweek-card p {
+  color: #666;
+}
+
+.gameweek-card.active {
+  background: #e6f5eb;
+}
+
+/* ABOUT */
+
+.about {
+  max-width: 800px;
+}
+
+.about p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.about-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.about-card h2 {
+  margin-bottom: 15px;
+}
+
+.about-card li {
+  margin: 10px 0;
+  margin-left: 20px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pitch {
+    margin: 0 10px;
+    padding: 30px 10px;
+  }
+
+  .row {
+    gap: 10px;
+  }
+
+  .player {
+    width: 75px;
+  }
+
+  .player-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .bench-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gameweeks {
+    grid-template-columns: 1fr;
+  }
+}
